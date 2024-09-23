@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>En-tête avec logo et barre de recherche</title>
+  <style>
+    /* CSS pour l'en-tête */
+    header {
+      background-image: url("img/header.png");
+      /*background-color: #e0f2f7; /* Couleur de fond de l'en-tête (bleu clair ici) */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between; /* Aligner le logo à gauche et la recherche à droite */
+      align-items: center; /* Aligner verticalement les éléments */
+    }
+
+    /* CSS pour le logo (avec le coin blanc) */
+    .logo {
+      background-color: white; /* Fond blanc pour le logo */
+      padding: 10px; /* Espace autour du logo */
+      border-radius: 10px 0 0 10px; /* Arrondir le coin gauche */
+    }
+
+    /* CSS pour la barre de recherche */
+    .search-bar {
+      background-color: #2196F3; /* Couleur de fond de la barre de recherche (bleu) */
+      padding: 8px 15px;
+      border-radius: 20px; /* Arrondir les coins de la barre de recherche */
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+      border: none; /* Supprimer la bordure du champ de texte */
+      padding: 5px;
+      background-color: transparent; /* Rendre le fond du champ de texte transparent */
+      color: white; /* Couleur du texte blanc */
+    }
+
+    .search-bar button {
+      background-color: transparent; /* Rendre le fond du bouton transparent */
+      border: none; /* Supprimer la bordure du bouton */
+      cursor: pointer; /* Changer le curseur en pointeur de main au survol du bouton */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="chemin/vers/votre/logo.png" alt="Logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher...">
+      <button>
+        <img src="chemin/vers/votre/icone-recherche.png" alt="Rechercher">
+      </button>
+    </div>
+  </header>
+
+</body>
+</html>
